@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo 'Introduzca el nombre del proyecto:'
+read filename
+
+export FILE_TO_COMPILE=$filename
+
+echo 'Fichero a compilar:' 
+echo $FILE_TO_COMPILE
+
+
+
+#exit 0
