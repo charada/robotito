@@ -1,12 +1,13 @@
 #!/bin/bash
 
-echo 'Introduzca el nombre del proyecto:'
+echo "Introduzca el nombre del proyecto:[$FILE_TO_COMPILE]"
 read filename
 
-export FILE_TO_COMPILE=$filename
+if [ "$filename" !=  '' ]; then
+   export FILE_TO_COMPILE=$filename
+fi
 
-echo 'Fichero a compilar:' 
-echo $FILE_TO_COMPILE
+echo "Fichero a compilar:$FILE_TO_COMPILE"
 
 
 
